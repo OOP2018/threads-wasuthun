@@ -17,7 +17,7 @@ The threads use the counter to add and subtract values.
 
 | Counter class           | Limit              | Runtime (sec)   |
 |:------------------------|:-------------------|-----------------|
-| Unsynchronized counter  |        1000        |    0.0004178    |
+| Unsynchronized counter  |      10000000      |    0.020547    |
 | Using ReentrantLock     |      10000000      |    1.0841820    |
 | Syncronized method      |      10000000      |     0.612513    |
 | AtomicLong for total    |      10000000      |     0.333880    |
@@ -57,6 +57,7 @@ consistent of value type at same time.Because atomic class have a atomic method 
 Using ReentrantLock is the best when we have more than 4 thread or many thread and fast run time than Syncronized method.and not specified like using AtomicLong for total.
 
 ## 7. Using Many Threads (optional)
+Unsynchronized counter average time is 0.064822 sec.
 AtomicLong for total average time is 1.670204 sec.
 Using ReentrantLock average time is 3.248360 sec.
 Syncronized method average time is 4.288606 sec.

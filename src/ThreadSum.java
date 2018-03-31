@@ -20,8 +20,8 @@ public class ThreadSum {
 		final int LIMIT = 10000000;
 		int poolsize = 5;
 		// The counter that accumulates a total.
-		Counter counter = new SynchronousCounter();
-		// runThreads(counter, LIMIT);
+		Counter counter = new Counter();
+		 //runThreads(counter, LIMIT);
 		runThreads(poolsize, counter, LIMIT);
 	}
 
